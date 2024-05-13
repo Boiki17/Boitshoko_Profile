@@ -1,11 +1,16 @@
-.containers {
-    border-style: double;
+.container{
+    border-style: solid;
+    border-radius: 50px;
     border-color: #0071b3;
-    margin: 80px
+    width: 80%;
+    margin-bottom: 20px;
+    height: 30%;
+    /* margin: 80px;   */
 }
 
 section{
     height: 100vh;
+  
 }
 
 p {
@@ -25,6 +30,7 @@ body {
 img
 {
     border-radius: 30px;
+    margin-bottom: 20px;
 }
 .jersey-20-charted-regular {
     font-family: "Jersey 20 Charted", sans-serif;
@@ -32,4 +38,32 @@ img
     font-style: normal;
     text-decoration-color: linear-gradient(rgb(0, 0, 0), rgb(25, 251, 255));
 }
+ .btn-block{
+    
+     /* margin-left: 2%;  */
+        width: 100%;
+}
+
+h2
+{
+    color: aliceblue;
+}
+
+.container h2 {
+    padding: 10px;
+}
+.btn-new{
+    padding: 10px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: rgb(90, 156, 255);
+    color: white;
+    transition: 0.5s;
+}
+.btn-new:hover{
+    background-color: transparent;
+    border: 2px solid gray;
+    transform: scale(1.1);
+}
+
   
