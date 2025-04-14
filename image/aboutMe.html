@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Boitshoko Bernard Khalo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 50px;
+            background: #C4A000;
+            color: white;
+        }
+        .profile-img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        .content {
+            text-align: center;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .btn {
+            display: inline-block;
+            margin: 15px;
+            padding: 12px 25px;
+            background: #008080;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .btn:hover {
+            background: #005757;
+        }
+        #nav-placeholder{
+
+            background-color: #005757;
+        }
+    </style>
+</head>
+<body>
+    <div id="nav-placeholder"></div>
+
+    <script>
+        fetch("Nav.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("nav-placeholder").innerHTML = data);
+    </script>
+
+    <div class="header">
+        <h1>About Boitshoko Khalo</h1>
+    </div>
+
+    <div class="container">
+        
+        
+        <div class="content">
+            <br><br>
+            <h2>Boitshoko Bernard Khalo</h2>
+            <h3>Software Developer | AI Enthusiast</h3>
+            <p>
+                Technology is constantly evolving, and I’m driven by the challenge of  building the future through innovation .  
+                As a  Software Developer with a strong foundation in  Web Development, Data Science, and Artificial Intelligence ,  
+                I bring  ideas to life  by designing powerful applications that solve real-world problems.  
+            </p>
+            <p>
+                My journey started with a deep curiosity about how technology shapes the world. Over the years, I have honed my skills  
+                in  Django, Python, React, JavaScript, and AI  to create intuitive, scalable, and efficient solutions. I specialize  
+                in developing  AI-powered applications, web platforms, and automation tools  that enhance productivity and transform businesses.  
+            </p>
+          
+            <p>
+                Let’s innovate, disrupt, and build together!  
+            </p>
+            <a href="projects.html" class="btn">View My Work</a>
+            <a href="contact.html" class="btn">Let's Connect</a>
+        </div>
+    </div>
+
+</body>
+</html>
