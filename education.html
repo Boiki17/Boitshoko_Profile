@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Education | Boitshoko Bernard Khalo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .header {
+            text-align: center;
+            padding: 50px;
+            background:#C4A000;
+            color: white;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .education-section {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .education-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .education {
+            background: #008080;
+            color: white;
+            padding: 12px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            width: 60%;
+            text-align: center;
+        }
+
+        .btn {
+            /* display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #008080; */
+            color: white;
+            /* text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold; */
+        }
+
+        .btn:hover {
+            background: #005757;
+        }
+
+        #nav-placeholder {
+
+            background-color: #005757;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav-placeholder"></div>
+
+    <script>
+        fetch("Nav.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("nav-placeholder").innerHTML = data);
+    </script>
+    <div class="header">
+        <h1>My Education</h1>
+        <p>Learning never stops, and my journey in technology is ongoing.</p>
+    </div>
+
+    <div class="container">
+        <div class="education-section">
+            <h2>Education Background</h2>
+            <div class="education-list">
+                <div class="education">Rsthepo Secondary School - Grade 12</div>
+                <div class="education">Tshwane University of Technology - Diploma in IT (Software Development) (2019 -
+                    2024)</div>
+                <div class="education">Tshwane University of Technology - Advanced Diploma in Computer Sciences
+                    (Currently Studying)</div>
+            </div>
+        </div>
+
+        <a href="index.html" class="btn btn-warning">Back to Home</a>
+    </div>
+</body>
+
+</html>
