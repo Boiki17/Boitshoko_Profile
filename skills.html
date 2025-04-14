@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills | Boitshoko Bernard Khalo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .header {
+            text-align: center;
+            padding: 50px;
+            background:#C4A000;
+            color: white;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .skills-section {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .skill {
+            background: #008080;
+            color: white;
+            padding: 12px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #008080;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #005757;
+        }
+
+        .colour {
+
+            width: 100%;
+            background-color: #005F56;
+            color: #005F56;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav-placeholder"></div>
+
+    <script>
+        fetch("Nav.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("nav-placeholder").innerHTML = data);
+    </script>
+
+    <div class="header">
+        <h1>My Skills</h1>
+        <p>Technology is my passion, and these are the tools I use to build the future.</p>
+    </div>
+
+    <div class="container">
+        <div class="skills-section">
+            <h2>Technical Skills</h2>
+            <div class="skills-list">
+                <div class="skill">Python</div>
+                <div class="skill">Java</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">C++</div>
+                <div class="skill">Django</div>
+                <div class="skill">React</div>
+                <div class="skill">HTML & CSS</div>
+                <div class="skill">Bootstrap</div>
+                <div class="skill">MySQL</div>
+                <div class="skill">PostgreSQL</div>
+                <div class="skill">SQLite</div>
+            </div>
+        </div>
+
+        <div class="skills-section">
+            <h2>AI & Data Science</h2>
+            <div class="skills-list">
+                <div class="skill">Machine Learning</div>
+                <div class="skill">Generative AI</div>
+                <div class="skill">OpenAI API</div>
+                <div class="skill">NumPy</div>
+                <div class="skill">Pandas</div>
+                <div class="skill">Matplotlib</div>
+            </div>
+        </div>
+
+        <div class="skills-section">
+            <h2>Tools & Technologies</h2>
+            <div class="skills-list">
+                <div class="skill">Git</div>
+                <div class="skill">Docker</div>
+                <div class="skill">Linux</div>
+                <div class="skill">APIs</div>
+                <div class="skill">Cloud Computing</div>
+                <div class="skill">React Native</div>
+            </div>
+        </div>
+
+        <div class="skills-section">
+            <h2>Leadership & Business</h2>
+            <div class="skills-list">
+                <div class="skill">Project Management</div>
+                <div class="skill">IT-Deploy CEO</div>
+                <div class="skill">Team Collaboration</div>
+                <div class="skill">Entrepreneurship</div>
+            </div>
+        </div>
+
+        <a href="index.html" class="btn">Back to Home</a>
+    </div>
+
+</body>
+
+</html>
