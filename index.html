@@ -1,43 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Jersey+20+Charted&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <title>Boitshoko_Bernard_Khalo</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+        function showSuccessMessage() {
+            alert("Successful");
+        }
+    </script>
 </head>
+
 <body>
-    <div class="container-fluid p-5 my-0 bg-primary text-white">
-        <span style="text-align: center;"><h1>BOITSHOKO BERNARD KHALO PROFILE</h1></span>    
+    
+<nav class=" nav-bar colour fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">WebSiteName</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="aboutMe.html">About Me</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="education.html">Education</a></li>
+      </ul>
     </div>
-    <br>
-    <div class="text-center">
-        <img src="image/boiki_Prof.jpg" width="300" height="300" alt="...">
-    </div>
-    <div class="container mb-3 p-2" style="max-width: 100%;">
-        
-        <div style="overflow: hidden;">         <!--  this is important -->
-        <h2 class="jersey-20-charted-regular">ECOMMERCE_Python&Django</h2>
-    </div>
-        <p>The systems is an Ecommerce System where you can add to a cart and purchase your product, it was developed using Python as a programming language and Django as a framework for creating Web Applications.</p>
-        <div class="row">
-            <div class="col">
-                <button type="button" class="btn-new ">Explore</button>
-            </div>
+  </nav>
+
+    <div class="container">
+        <h1> BOITSHOKO BERNARD KHALO </h1>
+
+        <div class="custom-jumbotron"> 
+            <img src="image/boiki.jpeg"   class="img-thumbnail"  width="300" height="300" alt="Boitshoko's Profile Picture">
+            <!-- Objectives Section -->
+            <p class="objectives">
+                A passionate software developer with practical experience in Django
+                and Python, having completed an internship that involved building two
+                websites, including an e-commerce platform. Skills include Java,
+                JavaScript, CSS, HTML, and C++. Eager to apply expertise to innovative
+                projects and continue growing in the field.
+            </p>
+
+
         </div>
-    </div>
-    <div class="container mb-3 p-2">
-        <h2 class="jersey-20-charted-regular">GENERATIVE AI</h2>
-        <p>This is a Data Science concept called Generative AI, which dives deep into machine learning and Deep Learning.</p>
-        <div class="row">
-            <div class="col">
-                <a href="https://github.com/Boiki17/GenerativeAI">
-                    <button type="button" class="btn-new">Explore</button>
-                </a>
-            </div>
+
+
+
+        <div class="border1">
+            <h2>E-Commerce System (Python & Django)</h2>
+            <p>The system is an e-commerce platform where users can add items to a cart and purchase products.
+                It was developed using Python as the programming language and Django as the framework.</p>
+            <a href="#"><button type="button" onclick="showSuccessMessage()">Explore</button></a>
         </div>
+
+        <div class="border1">
+            <h2 >AI Chatbot </h2>
+            <p>Created a Chatbot Web App using Django , python and OpenAI API making the response unique to cover the
+                required content by using a concept called prompt engineering.</p>
+            <a href="https://boiki17.pythonanywhere.com/">
+                <button type="button" onclick="showSuccessMessage()">Explore</button>
+            </a>
+        </div>
+        <div class="border1">
+            <h2>Generative AI</h2>
+            <p>This project explores Generative AI, a branch of Data Science that dives deep into Machine Learning
+                and Deep Learning.</p>
+            <a href="https://github.com/Boiki17/GenerativeAI">
+                <button type="button" onclick="showSuccessMessage()">Explore</button>
+            </a>
+        </div>
+
     </div>
 </body>
+
 </html>
