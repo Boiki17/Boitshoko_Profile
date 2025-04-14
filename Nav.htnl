@@ -1,0 +1,13 @@
+<nav class=" nav-bar colour fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">WebSiteName</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="aboutMe.html">About Me</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="education.html">Education</a></li>
+      </ul>
+    </div>
+  </nav>
