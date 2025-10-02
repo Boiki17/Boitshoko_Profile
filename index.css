@@ -1,100 +1,108 @@
-.container {
-    border-style: solid;
-    border-radius: 50px;
-    border-color: #005F56;
-    background-color: #F5F5F5;
-    width: 60%;
-    height: auto; /* Auto height for better responsiveness */
-    margin: 20px auto; /* Center container */
-    padding: 20px; /* Added padding for spacing */
-    color:#005F56;
-}
-
-.custom-jumbotron{
-background-color: #C4A000;
-border-radius: 30px;
-width: 600px;
-height:60%;
-margin: 0 auto; /* Centers it */
-text-align: center; /* Centers text inside */
-}
-
-section {
-    height: 100vh;
-}
-
-p {
-    color: #005F56;
-    font-size: 16px;
-    line-height: 1.5;
-}
-
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    color: #005F56;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: #005F56;
+  padding-top: 70px; /* avoid navbar overlap */
+  background: #fafafa;
 }
 
-img {
-    border-radius: 30px;
-    margin-bottom: 30px;
-    margin-top: 50px;
-    max-width: 50%;
-    height: 250px;
+/* Main container */
+.main-container {
+  border-radius: 20px;
+  background-color: #F5F5F5;
+  width: 90%;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
 }
 
-
-
-h2{
-    color:#005F56;;
-    padding: 10px;
+/* Profile section */
+.custom-jumbotron {
+  background-color: #C4A000;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px auto;
+  text-align: center;
+  color: white;
 }
 
+.profile-img {
+  border-radius: 20px;
+  margin: 20px auto;
+  max-width: 200px;
+  height: auto;
+}
 
+/* Objectives */
+.objectives {
+  color: white;
+  font-size: 18px;
+  margin-top: 15px;
+  line-height: 1.6;
+}
+
+/* Project sections */
+.border1 {
+  border: 2px solid #005F56;
+  border-radius: 20px;
+  background-color: #FFF4C2;
+  margin: 20px 0;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Headings */
+h1 {
+  font-size: 26px;
+  color: #005F56;
+  margin-bottom: 15px;
+}
+
+h2 {
+  color: #005F56;
+  margin-bottom: 10px;
+}
+
+/* Buttons */
 button {
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: 2px solid transparent;
-    background-color: #C4A000;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background-color: #C4A000;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
 button:hover {
-    background-color: transparent;
-    border: 2px solid gray;
-    transform: scale(1.1);
-    
-    
+  background-color: transparent;
+  border: 2px solid #C4A000;
+  color: #C4A000;
+  transform: scale(1.05);
 }
 
-.border1{
-
-    border-style: solid;
-    border-radius: 50px;
-    border-color: #005F56;
-    color:#005F56;
-    margin:2%;
-    background-color: #FFF4C2;
-
+/* Navbar */
+.colour {
+  background-color: #005F56 !important;
+  border: none;
 }
-.objectives {
-    color: #005F56;
-    font-size: 25px;
-    text-align: center;
-    max-width: 80%;
-    margin: 20px auto;
-    line-height: 1.5;
+.navbar-brand, .nav>li>a {
+  color: white !important;
 }
-.colour{
+.navbar-brand:hover, .nav>li>a:hover {
+  color: #C4A000 !important;
+}
 
- width: 100%;
-background-color: #005F56;
-color: #005F56;
-
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 22px;
+  }
+  .objectives {
+    font-size: 16px;
+  }
+  .profile-img {
+    max-width: 150px;
+  }
 }
